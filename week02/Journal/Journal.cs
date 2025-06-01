@@ -21,9 +21,12 @@ public class Journal
         "What is one thing I accomplished today that I am proud of?",
     };
 
+
+
     public void AddEntry(string prompt, string response, string date, string location)
     {
         Entry newEntry = new Entry(date, prompt, response, location);
+        Entry myEntry = new Entry();
         _entries.Add(newEntry);
     }
 

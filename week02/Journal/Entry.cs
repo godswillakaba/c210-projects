@@ -13,6 +13,11 @@ public class Entry
         Location = location;
     }
 
+    public Entry()
+    {
+
+    }
+
     public override string ToString()
     {
         return $"Date: {Date}\nPrompt: {Prompt}\nResponse: {Response}\nLocation: {Location}\n";
